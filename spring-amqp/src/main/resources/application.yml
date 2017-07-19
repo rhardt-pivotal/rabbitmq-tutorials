@@ -1,11 +1,22 @@
 spring:
   profiles:
     active: usage_message
+  application:
+    name: rabbittut
+
 
 logging:
   level:
-    org: ERROR
+    org: INFO
 
 tutorial:
   client:
     duration: 600000
+
+security:
+  basic:
+    enabled: false
+
+management:
+  security:
+    enabled: false

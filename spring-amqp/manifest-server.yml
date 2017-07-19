@@ -1,0 +1,14 @@
+---
+name: rabbit-demo-server
+instances: 3
+memory: 512M
+host: rabbit-demo-server
+path: target/rabbit-tutorials-1.7.1.RELEASE.jar
+services:
+- rabbit1
+- rabbit2
+- rabbit3
+- numbers-config
+env:
+  SPRING_PROFILES_ACTIVE: rpc,server
+  TRUST_CERTS: api.sys.hereismysourceco.de
